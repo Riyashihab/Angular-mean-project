@@ -31,7 +31,7 @@ authorRouter.get('/',function(req,res){
 
 // Author
 authorRouter.get('/:id',  (req, res) => {
-  
+  console.log('getttttauth')
     const id = req.params.id;
       Authordata.findOne({"_id":id})
       .then((author)=>{
